@@ -14,7 +14,7 @@ except Exception as e:
     graph_app = None
 
 
-app = FastAPI(title="LangGraph + Groq WebApp")
+app = FastAPI(title="my gen ai assistant")
 
 # Serve static files
 try:
