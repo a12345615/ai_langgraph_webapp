@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LangGraph + Groq AI Assistant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            padding: 40px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        textarea {
+            width: 100%;
+            height: 120px;
+            padding: 10px;
+            font-size: 14px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .answer {
+            margin-top: 20px;
+            white-space: pre-wrap;
+            background: #f1f1f1;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .intent {
+            margin-top: 10px;
+            font-size: 13px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>🤖 LangGraph + Groq AI Assistant</h2>
+
+    <textarea id="question" placeholder="Ask something..."></textarea>
+    <br>
+    <button onclick="askAI()">Ask</button>
+
+    <div class="intent" id="intent"></div>
+    <div class="answer" id="answer"></div>
+</div>
+
+<script>
+async function askAI() {
+    const question = document.getElementById("question").value;
+    document.getElementById("answer").innerText = "Thinking...";
+
+    const response = await fetch("/ask", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ question })
+    });
+
+    const data = await response.json();
+    document.getElementById("answer").innerText = data.answer;
+    document.getElementById("intent").innerText = "Detected intent: " + data.intent;
+}
+</script>
+
+</body>
+</html>
