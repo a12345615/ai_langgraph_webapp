@@ -8,6 +8,7 @@ try:
     from grapy import graph_app
     print("✓ Successfully loaded grapy")
 except Exception as e:
+    
     print(f"ERROR loading grapy: {e}")
     traceback.print_exc()
     graph_app = None
