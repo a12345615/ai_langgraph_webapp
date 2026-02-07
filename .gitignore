@@ -1,1 +1,14 @@
+# Ignore local env files
 .env
+.env.*
+# Virtual environments
+.venv/
+venv/
+# Python cache
+__pycache__/
+*.py[cod]
+# Byte-compiled
+*.pyc
+# Editor settings
+.vscode/
+.idea/
