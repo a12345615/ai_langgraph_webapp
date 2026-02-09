@@ -5,20 +5,9 @@ langgraph_ai is a Python-based Generative AI project built using LangGraph and G
 The project demonstrates how to structure prompts, define graph-based AI workflows, and invoke Groq models efficiently.
 
 This repository is intended for learning, experimentation, and building foundational GenAI workflows.
-langgraph_ai/
-│
-├── __pycache__/                 # Python cache files
-├── static/                      # Static assets (optional / future UI use)
-│
-├── .gitignore                   # Git ignore rules
-├── README.md                    # Project documentation
-├── app.py                       # Main application entry point
-├── grapy.py                     # LangGraph workflow definition
-├── prompts.py                   # Prompt templates
-├── test_invoke.py               # Test script for model invocation
-├── requirements.txt             # Python dependencies
-└── my gen ai assistant and 1 more page - Personal
-                                # Supporting notes or reference file
+
+<img width="652" height="362" alt="image" src="https://github.com/user-attachments/assets/5adab12e-8a66-43e9-a7b8-a227bf22666a" />
+
 
 
 # Features
@@ -90,3 +79,4 @@ Simple test harness for model invocation
 
 
 Clean and minimal codebase
+
