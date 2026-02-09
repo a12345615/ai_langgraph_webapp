@@ -1,4 +1,4 @@
-# LangGraph AI (Groq API)
+# LangGraph AI 
 Overview
 
 langgraph_ai is a Python-based Generative AI project built using LangGraph and Groq LLMs.
@@ -79,4 +79,5 @@ Simple test harness for model invocation
 
 
 Clean and minimal codebase
+
 
