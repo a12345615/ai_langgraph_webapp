@@ -69,6 +69,8 @@ Simple test harness for model invocation
   RAG with documents
   Multi-agent LangGraph flows
   Logging and error handling
+
+  http://127.0.0.1:8000/
   
  
 
@@ -79,5 +81,6 @@ Simple test harness for model invocation
 
 
 Clean and minimal codebase
+
 
 
